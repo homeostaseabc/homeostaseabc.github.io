@@ -1,0 +1,89 @@
+* {
+	margin:0;
+	padding:0;
+	}
+html, body {
+	height:100% !important;
+	}
+body {
+	margin:0 10px auto;
+	margin-left:250px;
+	font-size:10px;
+	font-family:verdana;
+	}
+.digiviceid {
+	position:absolute;
+	top:10px;
+	left:10px;
+	width:240px;
+	}
+.container {
+	padding-bottom:10px;
+	}
+.information {
+	padding:20px;
+	background:#F1EBE3;
+	display:none;
+	border:1px solid #B1A482;
+	border-top:0px;
+	}
+.information#Shoutbox-info {
+	padding:0px;
+	}
+.information#Important-info, .information#Shoutbox-info {
+	display:block;
+	}
+.title {
+	font-weight:bold;
+	font-size:16px;
+	padding:5px;
+	padding-left:10px;
+	background:url('title-bg.gif');
+	border:1px solid #B1A482;
+	}
+.large {
+	font-size:30px;
+	}
+label, input, select {
+	display:block;
+	width:150px;
+	float:left;
+	margin-bottom:10px;
+	text-align:center;
+	}
+label {
+	text-align:right;
+	width:50px;
+	padding-right:20px;
+	}
+br	{
+	clear: left;
+	}
+	
+#OJBox {
+	background:orange			
+	}
+#KSSN {
+	background:#FFE381;
+	border:0px;
+	}
+#notwork {
+	color:red;
+	}
+#works {
+	color:green;
+	}
+ul ul {
+	margin-left:20px;
+	padding-left:10px;
+	border-left:2px solid gray;
+	}
+ul#works ul {
+	border-left:2px solid green;
+	}
+ul#notwork ul {
+	border-left:2px solid red;
+	}
+#tutorial {
+	margin-left:50px;
+	}
