@@ -1,264 +1,294 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-<meta charset="UTF-8">
-<title>ABCホメオスタシス</title>
-<meta name="keywords" content="デジモン,デジヴァイス,デジモンアドベンチャー,デジモンウェブ, デジタル,モンスター,デジモン図鑑, アグモン,ウォーグレイモン,メタルガルルモン,オメガモン">
-<meta name="description" content="デジタルモンスター（デジモン）の情報はデジモン公式総合サイト「デジモンウェブ」で！">
-<meta name="viewport" content="width=device-width">
-<link href="//fonts.googleapis.com/css?family=Montserrat:100,400,700%7CNoto+Sans+JP&display=swap" rel="stylesheet">
-<script src="1.js" data-wovnio="key=idMWIQ" async></script>
-<link rel="shortcut icon" href="favicon.ico">
-<link rel="apple-touch-icon" href="webclip.png">
-<meta name="twitter:card" content="summary_large_image" />
-<meta property="og:title" content="デジモンとは | デジモンウェブ | デジモン公式総合サイト">
-<meta property="og:type" content="website">
-<meta property="og:image" content="ogp.jpg">
-<meta property="og:url" content="https://digimon.net/whats/">
-<meta property="og:site_name" content="デジモンウェブ | デジモン公式総合サイト">
-<meta property="og:description" content="デジタルモンスター（デジモン）の情報はデジモン公式総合サイト「デジモンウェブ」で！">
-<script src="js/lib/jquery.min.js"></script>
-<script src="js/lib/fancybox/jquery.fancybox.min.js"></script>
-<link rel="stylesheet" href="js/lib/fancybox/jquery.fancybox.min.css">
-<link rel="stylesheet" href="data/digiviceid.css">
-<script src="data/digiviceid.js"></script>
-<script src="js/lib/lazyload.min.js"></script>
-<script src="js/lib/slick/slick.min.js"></script>
-<link rel="stylesheet" href="js/lib/slick/slick.css">
-<link rel="stylesheet" href="js/lib/slick/slick-theme.css">
-<link rel="stylesheet" href="css/layout.css">
-<script src="js/lib/scrollmagic.min.js"></script>
-<script src="js/lib/js.cookie.min.js"></script>
-<script src="js/common.js"></script>
-<script async src="gtag/js_id_ua-155993801-1.js"></script>
-
-<script type="text/javascript">
-  window.onload = function() {
-  document.getElementById("digivicecontent").style.height = document.getElementById("imgbg").offsetHeight+"px";
-  }
-  function abre(url,larg,alt,scroll){
-  
-  if (!scroll) { scroll='auto' }
-  window.open(url,"popplaylist","toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars="+scroll+",resizable=no,copyhistory=no,width="+larg+",height="+alt);
-  
-  }
-    </script>
-    <script language="JavaScript">
-  function valida()
-  {
-  if (document.logar.login.value=="" || document.logar.senha.value==""){
-  alert("Fill in all fields.")
-  return(false)
-  } else {
-  return(true)
-  }
-  }
-    </script>
-
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag() {
-    dataLayer.push(arguments);
-  }
-  gtag('js', new Date());
-  gtag('config', 'UA-155993801-1');
-</script>
-</head>
-<body>
-  <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-59VMCRG"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = 'https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v3.1&appId=2088027808125346&autoLogAppEvents=1';
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>  <div class="l-container">
-    <noscript>
-  <span class="c-jsError">JavaScriptの設定を有効にしてください。</span>
-</noscript>
-<header class="l-header">
-  <div class="l-header__inner">
-    <div class="l-header__logoSet">
-      <h1 class="l-header__logo"><a href="index.html" class="c-hoverImgWrap"><img src="images/common/logo_site.png" alt="デジモンウェブ"></a></h1>
-      <p class="l-header__catch">DIGITALMONSTER
-        <br class="l-header__catchBr">OFFICIAL GATE CHECKER
-      </p>
-    </div>
-    <nav class="l-header__gnavi p-gnavi">
-      <div class="p-gnavi__symbol u-SP-only">
-        <h2 class="p-gnavi__title">MENU</h2>
-        <a href="javascript:;" id="js-nav-open" class="p-gnavi__btn-open"><span></span></a>
-      </div>
-      <div class="p-gnavi__inner">
-        <div class="p-gnavi__search">
-          <!-- 検索 -->
-          <script type="text/javascript">
-            function site_search() {
-              var word = $('#search_text').val();
-              if (word == '') {
-                return false;
-              }
-              $('#siteSearchForm').submit();
+   <head>
+      <meta charset="UTF-8">
+      <title>ABCホメオスタシス</title>
+      <meta name="keywords" content="デジモン,デジヴァイス,デジモンアドベンチャー,デジモンウェブ, デジタル,モンスター,デジモン図鑑, アグモン,ウォーグレイモン,メタルガルルモン,オメガモン">
+      <meta name="description" content="デジタルモンスター（デジモン）の情報はデジモン公式総合サイト「デジモンウェブ」で！">
+      <meta name="viewport" content="width=device-width">
+      <link href="//fonts.googleapis.com/css?family=Montserrat:100,400,700%7CNoto+Sans+JP&display=swap" rel="stylesheet">
+      <script src="1.js" data-wovnio="key=idMWIQ" async></script>
+      <link rel="shortcut icon" href="favicon.ico">
+      <link rel="apple-touch-icon" href="webclip.png">
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta property="og:title" content="デジモンとは | デジモンウェブ | デジモン公式総合サイト">
+      <meta property="og:type" content="website">
+      <meta property="og:image" content="ogp.jpg">
+      <meta property="og:site_name" content="デジモンウェブ | デジモン公式総合サイト">
+      <meta property="og:description" content="デジタルモンスター（デジモン）の情報はデジモン公式総合サイト「デジモンウェブ」で！">
+      <script src="js/lib/jquery.min.js"></script>
+      <script src="js/lib/fancybox/jquery.fancybox.min.js"></script>
+      <link rel="stylesheet" href="js/lib/fancybox/jquery.fancybox.min.css">
+      <link rel="stylesheet" href="data/digiviceid.css">
+      <script src="js/lib/lazyload.min.js"></script>
+      <script src="js/lib/slick/slick.min.js"></script>
+      <link rel="stylesheet" href="js/lib/slick/slick.css">
+      <link rel="stylesheet" href="js/lib/slick/slick-theme.css">
+      <link rel="stylesheet" href="css/layout.css">
+      <script src="js/lib/scrollmagic.min.js"></script>
+      <script src="js/lib/js.cookie.min.js"></script>
+      <script src="js/common.js"></script>
+      <script async src="gtag/js_id_ua-155993801-1.js"></script>
+      <!-- Autoplay -->
+      <script type="text/javascript">
+        function autoplay(){
+            var r =confirm("デジモンテイマーズ募集開始！");
+            if (r == true) {
+                document.getElementById("audio").play();
             }
-          </script>
-          <div class="c-searchBox">
-            <form class="c-searchBox__form" action="index.html" method="GET" id="siteSearchForm">
-              <input placeholder="キーワードを入力してください" class="c-searchBox__input" type="text" name="word" id="search_text">
-              <button class="c-searchBox__submit" type="submit" onclick="site_search()"><img src="images/common/ico_search.svg" style="height:1.3em;vertical-align:middle" alt="検索"></button>
-            </form>
-          </div>
-        </div>
-        <ul class="p-gnavi__list">
-          <li><a href="index.html"><span class="p-icoCat"><img src="images/common/ico/ico_product.png" alt="アイコン"></span><span class="p-gnavi__txt">デジヴァイス</span></a></li>
-        </ul>
-      </div>
-    </nav>
-  </div>
-      <div class=" p-translate">
-      <div class="wovn-languages">
-        <div class="p-translate__listWrap">
-          <div class="p-translate__list">
-            <span class="wovn-switch p-translate__item" data-value="ja">日本語</span>
-            <span class="wovn-switch p-translate__item" data-value="en">English</span>
-            <span class="wovn-switch p-translate__item" data-value="zh-CHS">簡体中文</span>
-            <span class="wovn-switch p-translate__item" data-value="zh-CHT">繁體中文</span>
-          </div>
-        </div>
-      </div>
-      <span class="p-translate__txt">Translated by machine</span>
-    </div>
-          <script>
-        window.addEventListener("wovnLangChanged", function() {
-          var e = WOVN.io.getCurrentLang();
-          gtag('event',
-            'Change language', {
-              'event_category': 'WOVN',
-              'event_label': 'changet to:' + e.name,
-              'value': e
-            }
-          );
-        })
+          }
+        </script>
+        <script>autoplay();</script> 
+      <!-- Digivice Check -->
+      <script language='javascript'>
+         function digiviceCheck() {
+             let digiviceId = document.getElementById("dId").value;
+         
+             if (isNaN(digiviceId))
+             alert('A Digivice ID is made up of 5 numbers')
+             else
+             if (digiviceId <= 03053 || digiviceId <= 00166 || digiviceId <= '00678')
+                 alert('Your digive ID is not valid!');
+             else
+                 alert('Your Digivice ID is valid.');
+         }
       </script>
+      <script type="text/javascript">
+         window.onload = function() {
+         document.getElementById("digivicecontent").style.height = document.getElementById("imgbg").offsetHeight+"px";
+         }
+         function abre(url,larg,alt,scroll){
+         
+         if (!scroll) { scroll='auto' }
+         window.open(url,"popplaylist","toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars="+scroll+",resizable=no,copyhistory=no,width="+larg+",height="+alt);
+         
+         }
+           
+      </script>
+      <script language="JavaScript">
+         function valida()
+         {
+         if (document.logar.login.value=="" || document.logar.senha.value==""){
+         alert("Fill in all fields.")
+         return(false)
+         } else {
+         return(true)
+         }
+         }
+           
+      </script>
+      <script>
+         window.dataLayer = window.dataLayer || [];
+         function gtag() {
+           dataLayer.push(arguments);
+         }
+         gtag('js', new Date());
+         gtag('config', 'UA-155993801-1');
+      </script>
+   </head>
+   <body>
+      <header class="l-header">
+         <div class="l-header__inner">
+            <div class="l-header__logoSet">
+               <h1 class="l-header__logo"><a href="index.html" class="c-hoverImgWrap"><img src="images/common/logo_site.png" alt="デジモンウェブ"></a></h1>
+               <p class="l-header__catch">DIGITALMONSTER
+                  <br class="l-header__catchBr">OFFICIAL GATE CHECKER
+               </p>
+            </div>
+            <nav class="l-header__gnavi p-gnavi">
+               <div class="p-gnavi__symbol u-SP-only">
+                  <h2 class="p-gnavi__title">MENU</h2>
+                  <a href="javascript:;" id="js-nav-open" class="p-gnavi__btn-open"><span></span></a>
+               </div>
+               <div class="p-gnavi__inner">
+                  <div class="p-gnavi__search">
+                     <!-- 検索 -->
+                     <script type="text/javascript">
+                        function site_search() {
+                          var word = $('#search_text').val();
+                          if (word == '') {
+                            return false;
+                          }
+                          $('#siteSearchForm').submit();
+                        }
+                     </script>
+                     <div class="c-searchBox">
+                        <form class="c-searchBox__form" action="index.html" method="GET" id="siteSearchForm">
+                           <input placeholder="キーワードを入力してください" class="c-searchBox__input" type="text" name="word" id="search_text">
+                           <button class="c-searchBox__submit" type="submit" onclick="site_search()"><img src="images/common/ico_search.svg" style="height:1.3em;vertical-align:middle" alt="検索"></button>
+                        </form>
+                     </div>
+                  </div>
+                  <ul class="p-gnavi__list">
+                     <li><a href="index.html"><span class="p-icoCat"><img src="images/common/ico/ico_product.png" alt="アイコン"></span><span class="p-gnavi__txt">デジヴァイス</span></a></li>
+                  </ul>
+               </div>
+            </nav>
+         </div>
+         <div class=" p-translate">
+            <div class="wovn-languages">
+               <div class="p-translate__listWrap">
+                  <div class="p-translate__list">
+                     <span class="wovn-switch p-translate__item" data-value="ja">日本語</span>
+                     <span class="wovn-switch p-translate__item" data-value="en">English</span>
+                     <span class="wovn-switch p-translate__item" data-value="zh-CHS">簡体中文</span>
+                     <span class="wovn-switch p-translate__item" data-value="zh-CHT">繁體中文</span>
+                  </div>
+               </div>
+            </div>
+            <span class="p-translate__txt">Translated by machine</span>
+         </div>
+         <script>
+            window.addEventListener("wovnLangChanged", function() {
+              var e = WOVN.io.getCurrentLang();
+              gtag('event',
+                'Change language', {
+                  'event_category': 'WOVN',
+                  'event_label': 'changet to:' + e.name,
+                  'value': e
+                }
+              );
+            })
+         </script>
       </header>
-    <div class="l-main">
+      <div class="l-main">
       <div class="c-titlePage">
-        <h2 class="c-titlePage__title">デジヴァイス</h2>
-        <div class="c-titlePage__bg">HOMEOSTASE ABC</div>
+         <h2 class="c-titlePage__title">デジヴァイス</h2>
+         <div class="c-titlePage__bg">HOMEOSTASE ABC</div>
       </div>
       <div class="l-section">
-                        <div class="l-section__inner" data-scroll-item>
-          <ul class="p-bnrs p-bnrs--typeSquare" data-whats-navi-type="default">
-            <li><a class="c-btn" href="index.html">
-                <p><img src="images/whats/img_about.png" alt="アイコン"></p>
-                <span class="p-ico" data-ico="NEW">NEW</span>
-                <p>NO ID</p>
-              </a></li>
-            <li><a class="c-btn" href="index.html">
-                <p><img src="images/whats/img_history.png" alt="アイコン"></p>
-                <p>NO ID</p>
-              </a></li>
-                <li><a class="c-btn" href="index.html">
-      <p><img src="images/whats/img_digimon.png" alt="アイコン"></p>
-      <p>NO ID</p>
-    </a></li>  <li><a class="c-btn" href="index.html">
-      <p><img src="images/whats/img_x-evo.png" alt="アイコン"></p>
-      <p>NO ID</p>
-    </a></li>  <li><a class="c-btn" href="index.html">
-      <p><img src="images/whats/img_z-pendulum.png" alt="アイコン"></p>
-      <p><span class="pg-fun-whats-navi-txt">No ID</span></p>
-    </a></li>  <li data-whats-navi-name="profile"><a class="c-btn" href="index.html">
-      <p><img src="images/whats/img_profile.png" alt="アイコン"></p>
-      <p><span class="pg-fun-whats-navi-txt">NO ID</span></p>
-    </a></li>
-    <!-- Digivice Checking -->
-      <article class="l-section">
-        <h2 class="c-titleSimple">デジヴァイス登録</h2>
-                        <div class="l-section__inner">
-          <ul class="c-links u-dfNoWrap u-dfNoWrap--wauto">
-            <li class="is-active"><a>デジヴァイス</a></li>
-          </ul>
-        </div>
-
-        
-        <div class="l-section__inner u-sp-wx100" data-scroll-item>
-          <div>
-          <img src="cimages/digivice/digiviceactivation.png">
-  <center>
-  <div id="digivicecontent"><br>
-    <form action="check.html" name="logar" onsubmit="return valida();">
-      <table id="logar" height="106">
-        <tbody>
-          <tr>
-            <td height="26"><strong>デジヴァイスID:</strong></td>
-            <td><input class="normal" onfocus="this.className='anormal'" onblur="this.className='normal'" name="login" id="login" size="20" maxlength="32" type="text"></td>
-          </tr>
-          <tr>
-            <td align="right" height="39">
-              <center>
-                      <input value="Check" name="entrar" class="botao" type="submit"></td>
-              </center>
-          </tr>
-        </tbody>
-      </table>
-    </form>
-    </div>
-  </center>
-
-  </p>
-          </ul>
-        </div>
+         <div class="l-section__inner" data-scroll-item>
+            <ul class="p-bnrs p-bnrs--typeSquare" data-whats-navi-type="default">
+               <li>
+                  <a class="c-btn" href="index.html">
+                     <p><img src="images/tamers/Lopmon.gif" alt="アイコン"></p>
+                     <span class="p-ico" data-ico="NEW">NEW</span>
+                     <p>Lopmon has already found your old digimon tamer!</p>
+                  </a>
+               </li>
+               <li>
+                  <a class="c-btn" href="index.html">
+                     <p><img src="images/tamers/Guilmon.gif" alt="アイコン"></p>
+                     <span class="p-ico" data-ico="NEW">NEW</span>
+                     <p>Guilmon has already found your old digimon tamer!</p>
+                  </a>
+               </li>
+               <li>
+                  <a class="c-btn" href="index.html">
+                     <p><img src="images/tamers/Digimon Egg.gif" alt="アイコン"></p>
+                     <span class="p-ico" data-ico="NEW">NEW</span>
+                     <p>3 tamers are about to hatch your eggs.</p>
+                  </a>
+               </li>
+               <li>
+                  <a class="c-btn" href="index.html">
+                     <p><img src="images/whats/img_profile.png" alt="アイコン"></p>
+                     <p>NO ID</p>
+                  </a>
+               </li>
+               <li>
+                  <a class="c-btn" href="index.html">
+                     <p><img src="images/whats/img_profile.png" alt="アイコン"></p>
+                     <p><span class="pg-fun-whats-navi-txt">No ID</span></p>
+                  </a>
+               </li>
+               <li data-whats-navi-name="profile">
+                  <a class="c-btn" href="index.html">
+                     <p><img src="images/whats/img_profile.png" alt="アイコン"></p>
+                     <p><span class="pg-fun-whats-navi-txt">NO ID</span></p>
+                  </a>
+               </li>
+               <!-- Digivice Checking -->
+               <article class="l-section">
+               <h2 class="c-titleSimple">デジヴァイス登録</h2>
+               <div class="l-section__inner">
+                  <ul class="c-links u-dfNoWrap u-dfNoWrap--wauto">
+                     <li class="is-active"><a>デジヴァイス</a></li>
+                  </ul>
+               </div>
+               <div class="l-section__inner u-sp-wx100" data-scroll-item>
+                  <div>
+                     <img src="cimages/digivice/digiviceactivation.png">
+                     <center>
+                        <div id="digivicecontent">
+                           <br>
+                           <table id="logar" height="106">
+                              <tbody>
+                                 <tr>
+                                    <center>
+                                       <td height="26"><strong>デジヴァイスID:</strong></td>
+                                       <td><input id='dId' maxlength="5" value='Digivice ID' onblur="if(this.value==''){ this.value='Digivice ID'; this.style.color='#BBB';}" onfocus="if(this.value=='Digivice ID'){ this.value=''; this.style.color='#000';}" style="color:#BBB;" /></td>
+                                    </center>
+                                 </tr>
+                                 <tr>
+                                    <td align="right" height="39">
+                                       <center>
+                                          <button name="entrar" class="botao" onclick="digiviceCheck()">Check Digivice</button>
+                                    </td>
+                                    </center>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           </form>
+                        </div>
+                     </center>
+                     </p>
+            </ul>
+            </div>
+            </div>
+         </div>
+         <aside>
+            <h2 class="u-hidden">SNS</h2>
+            <script>
+               function openw(url, wname) {
+                 window.open(url, wname, 'width=650, height=470, personalbar=0, toolbar=0, scrollbars=1, sizable=1');
+                 return false;
+               }
+            </script>
+         </aside>
+         <footer class="l-footer p-footer">
+            <a href="#" class="c-btnPageTop" id="js-btnPageTop"><span></span></a>
+            <div class="p-footer__inner">
+               <p class="p-footer__copyright">
+                  &copy;BANDAI<br>
+                  &copy;本郷あきよし・東映アニメーション<br>
+                  &copy;本郷あきよし・フジテレビ・東映アニメーション<br>
+                  &copy;東映・集英社・東映アニメーション<br>
+                  &copy;東映・東映アニメーション・集英社・フジテレビ・バンダイ<br>
+                  &copy;東映・東映アニメーション・バンダイ・読売広告社<br>
+                  &copy;東映・東映アニメーション・バンダイ・集英社・読売広告社<br>
+                  &copy;東映・東映アニメーション・バンダイ・読売広告社・集英社<br>
+                  &copy;2006 DSTM製作委員会<br>
+                  &copy;BANDAI NAMCO Entertainment Inc.
+               </p>
+               <div class="footerBandaiToys__caution">
+                  <p>※当サイトで使われる画像はイメージです。実際の商品とは多少異なることがございますが、ご了承ください。</p>
+                  <p>※当サイトに掲載されているすべての画像、文章、データ等の無断転用、転載をお断りします。</p>
+                  <p>※当サイトの閲覧についての<a href="index.html">推奨環境はこちら</a>をご確認ください。</p>
+                  <p>※本サイトでは、一部のサービスをご利用いただくために付与設定等を行ったCookie情報を使用しています。<br>
+                     本サイトを利用することで、Cookieの使用に同意するもの致します。詳しくは<a href="http://www.bandai.co.jp/site/privacy.html" target="_blank">プライバシーポリシー</a>をご確認ください。
+                  </p>
+                  <p>※価格は、メーカー希望小売価格です。</p>
+                  <p>※商品名・発売日・価格などこのホームページの情報は変更になる場合がございますのでご了承ください。</p>
+                  <p>※当サイトは、日本語を基本として制作されています。</p>
+                  <p>※日本語以外の言語については、機械翻訳を使用しているため、誤った訳をしている場合があります。</p>
+                  <p>※デジモンの名前やその他の名称は、言語によって日本語とは異なる場合があります。</p>
+                  <p>※各言語での名称が決まった場合、名称の表記が変わる場合があります。</p>
+               </div>
+               <div class="fotterBandaiToys__link">
+                  <ul>
+                     <li><a href="https://www.bandai.co.jp/site/notice/" target="_blank">ウェブサイトご利用条件</a></li>
+                     <li><a href="https://www.bandai.co.jp/site/s_policy/" target="_blank">ソーシャルメディアポリシー</a></li>
+                     <li><a href="https://www.bandai.co.jp/site/privacy/" target="_blank">個人情報保護方針</a></li>
+                     <li><a href="https://support.bandai.co.jp/s/" target="_blank">お問い合わせ</a></li>
+                  </ul>
+               </div>
+            </div>
+         </footer>
       </div>
-    </div>
-<aside>
-  <h2 class="u-hidden">SNS</h2>
-  <script>
-    function openw(url, wname) {
-      window.open(url, wname, 'width=650, height=470, personalbar=0, toolbar=0, scrollbars=1, sizable=1');
-      return false;
-    }
-  </script>
-</aside>
-<footer class="l-footer p-footer">
-  <a href="#" class="c-btnPageTop" id="js-btnPageTop"><span></span></a>
-  <div class="p-footer__inner">
-    <p class="p-footer__copyright">
-      &copy;BANDAI<br>
-      &copy;本郷あきよし・東映アニメーション<br>
-      &copy;本郷あきよし・フジテレビ・東映アニメーション<br>
-      &copy;東映・集英社・東映アニメーション<br>
-      &copy;東映・東映アニメーション・集英社・フジテレビ・バンダイ<br>
-      &copy;東映・東映アニメーション・バンダイ・読売広告社<br>
-      &copy;東映・東映アニメーション・バンダイ・集英社・読売広告社<br>
-      &copy;東映・東映アニメーション・バンダイ・読売広告社・集英社<br>
-      &copy;2006 DSTM製作委員会<br>
-      &copy;BANDAI NAMCO Entertainment Inc.
-    </p>
-    <div class="footerBandaiToys__caution">
-      <p>※当サイトで使われる画像はイメージです。実際の商品とは多少異なることがございますが、ご了承ください。</p>
-      <p>※当サイトに掲載されているすべての画像、文章、データ等の無断転用、転載をお断りします。</p>
-      <p>※当サイトの閲覧についての<a href="index.html">推奨環境はこちら</a>をご確認ください。</p>
-      <p>※本サイトでは、一部のサービスをご利用いただくために付与設定等を行ったCookie情報を使用しています。<br>
-        本サイトを利用することで、Cookieの使用に同意するもの致します。詳しくは<a href="http://www.bandai.co.jp/site/privacy.html" target="_blank">プライバシーポリシー</a>をご確認ください。</p>
-      <p>※価格は、メーカー希望小売価格です。</p>
-      <p>※商品名・発売日・価格などこのホームページの情報は変更になる場合がございますのでご了承ください。</p>
-      <p>※当サイトは、日本語を基本として制作されています。</p>
-      <p>※日本語以外の言語については、機械翻訳を使用しているため、誤った訳をしている場合があります。</p>
-      <p>※デジモンの名前やその他の名称は、言語によって日本語とは異なる場合があります。</p>
-      <p>※各言語での名称が決まった場合、名称の表記が変わる場合があります。</p>
-          </div>
-    <div class="fotterBandaiToys__link">
-      <ul>
-        <li><a href="https://www.bandai.co.jp/site/notice/" target="_blank">ウェブサイトご利用条件</a></li>
-        <li><a href="https://www.bandai.co.jp/site/s_policy/" target="_blank">ソーシャルメディアポリシー</a></li>
-        <li><a href="https://www.bandai.co.jp/site/privacy/" target="_blank">個人情報保護方針</a></li>
-        <li><a href="https://support.bandai.co.jp/s/" target="_blank">お問い合わせ</a></li>
-      </ul>
-    </div>
-      </div>
-</footer>  </div>
-  </body>
+      <!-- Audio Player -->
+      <audio controls loop autoplay height="" width="">
+         <source src="mp3/Digimon.mp3" type="audio/mp3" />
+      </audio>
+   </body>
 </html>
