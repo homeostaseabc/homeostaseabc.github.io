@@ -41,41 +41,20 @@
         <script>autoplay();</script> 
       <!-- Digivice Check -->
       <script language='javascript'>
-         function digiviceCheck() {
-             let digiviceId = document.getElementById("dId").value;
-         
-             if (isNaN(digiviceId))
-             alert('A Digivice ID is made up of 5 numbers')
-             else
-             if (digiviceId <= 03053 || digiviceId <= 00166 || digiviceId <= '00678')
-                 alert('Your digive ID is not valid!');
-             else
-                 alert('Your Digivice ID is valid.');
+      function digiviceCheck() {
+         let digiviceId = document.getElementById("dId").value;
+         // Available Digivice IDs Collection
+         var availableIds = ['03053', '00166', '00678']
+         // Only Numbers
+         if (isNaN(digiviceId))
+            alert('A Digivice ID is made up of 5 numbers')
+         else
+         // Check if the ID typed on "digiviceId" variable (dId field in HTML) exists inside the "availableIds" array
+         if(availableIds.indexOf(digiviceId) !== -1)
+            alert('Your Digivice ID is valid.');
+         else
+            alert('Your digive ID is not valid!'); 
          }
-      </script>
-      <script type="text/javascript">
-         window.onload = function() {
-         document.getElementById("digivicecontent").style.height = document.getElementById("imgbg").offsetHeight+"px";
-         }
-         function abre(url,larg,alt,scroll){
-         
-         if (!scroll) { scroll='auto' }
-         window.open(url,"popplaylist","toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars="+scroll+",resizable=no,copyhistory=no,width="+larg+",height="+alt);
-         
-         }
-           
-      </script>
-      <script language="JavaScript">
-         function valida()
-         {
-         if (document.logar.login.value=="" || document.logar.senha.value==""){
-         alert("Fill in all fields.")
-         return(false)
-         } else {
-         return(true)
-         }
-         }
-           
       </script>
       <script>
          window.dataLayer = window.dataLayer || [];
@@ -87,6 +66,23 @@
       </script>
    </head>
    <body>
+      <!-- Google Tag Manager (noscrip t) -->
+      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-59VMCRG"
+         height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <!-- End Google Tag Manager (noscript) -->
+      <div id="fb-root"></div>
+      <script>(function(d, s, id) {
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) return;
+         js = d.createElement(s); js.id = id;
+         js.src = 'https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v3.1&appId=2088027808125346&autoLogAppEvents=1';
+         fjs.parentNode.insertBefore(js, fjs);
+         }(document, 'script', 'facebook-jssdk'));
+      </script>  
+      <div class="l-container">
+      <noscript>
+         <span class="c-jsError">JavaScriptの設定を有効にしてください。</span>
+      </noscript>
       <header class="l-header">
          <div class="l-header__inner">
             <div class="l-header__logoSet">
@@ -217,13 +213,15 @@
                                  <tr>
                                     <center>
                                        <td height="26"><strong>デジヴァイスID:</strong></td>
+                                       <!-- Digivice ID Input Field -->
                                        <td><input id='dId' maxlength="5" value='Digivice ID' onblur="if(this.value==''){ this.value='Digivice ID'; this.style.color='#BBB';}" onfocus="if(this.value=='Digivice ID'){ this.value=''; this.style.color='#000';}" style="color:#BBB;" /></td>
                                     </center>
                                  </tr>
                                  <tr>
                                     <td align="right" height="39">
                                        <center>
-                                          <button name="entrar" class="botao" onclick="digiviceCheck()">Check Digivice</button>
+                                          <!-- Digivice Checking Button -->
+                                          <button name="entrar" class="botao" onclick="digiviceCheck()">Check Digivice ID</button>
                                     </td>
                                     </center>
                                  </tr>
