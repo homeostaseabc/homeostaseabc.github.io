@@ -28,34 +28,10 @@
       <script src="js/lib/scrollmagic.min.js"></script>
       <script src="js/lib/js.cookie.min.js"></script>
       <script src="js/common.js"></script>
+      <script src="js/dcheck.js"></script>
+      <script src="js/autoplay.js"></script>
       <script async src="gtag/js_id_ua-155993801-1.js"></script>
-      <!-- Autoplay -->
-      <script type="text/javascript">
-        function autoplay(){
-            var r =confirm("デジモンテイマーズ募集開始！");
-            if (r == true) {
-                document.getElementById("audio").play();
-            }
-          }
-        </script>
-        <script>autoplay();</script> 
-      <!-- Digivice Check -->
-      <script language='javascript'>
-      function digiviceCheck() {
-         let digiviceId = document.getElementById("dId").value;
-         // Available Digivice IDs Collection
-         var availableIds = ['03053', '00166', '00678']
-         // Only Numbers
-         if (isNaN(digiviceId))
-            alert('A Digivice ID is made up of 5 numbers')
-         else
-         // Check if the ID typed on "digiviceId" variable (dId field in HTML) exists inside the "availableIds" array
-         if(availableIds.indexOf(digiviceId) !== -1)
-            alert('Your Digivice ID is valid.');
-         else
-            alert('Your digive ID is not valid!'); 
-         }
-      </script>
+        <script>autoplay();</script>
       <script>
          window.dataLayer = window.dataLayer || [];
          function gtag() {
@@ -157,186 +133,161 @@
          <div class="l-section__inner" data-scroll-item>
             <ul class="p-bnrs p-bnrs--typeSquare" data-whats-navi-type="default">
                <li>
+                  <a class="c-btn" href="index.html">
+                     <p><img src="images/tamers/DigiEggs.png" alt="アイコン"></p>
+                     <span class="p-ico" data-ico="NEW">NEW</span>
+                     <p>2 tamers are about to hatch your eggs.</p>
+                  </a>
+               </li>
+               <li>
+               <a class="c-btn" href="index.html">
+                  <p><img src="images/tamers/Terriermon.png" alt="アイコン"></p>
+                  <p>Terriermon is awaiting for a digivice acquisition!</p>
+               </a>
+               </li>
+               <li>
+                  <a class="c-btn" href="index.html">
+                     <p><img src="images/tamers/Renamon.png" alt="アイコン"></p>
+                     <p>Renamon has already found your old digimon tamer but the tamer needs a new digivice!</p>
+                  </a>
+               </li>
+               <li>
                <a class="c-btn" href="index.html">
                   <p><img src="images/tamers/Calumon.png" alt="アイコン"></p>
-                  <span class="p-ico" data-ico="NEW">NEW</span>
                   <p>Calumon the secret of digievolution has been saved!</p>
                </a>
                </li>
                <li>
                   <a class="c-btn" href="index.html">
                      <p><img src="images/tamers/Lopmon.png" alt="アイコン"></p>
-                     <span class="p-ico" data-ico="NEW">NEW</span>
                      <p>Lopmon has already found your old digimon tamer!</p>
                   </a>
                </li>
                <li>
                   <a class="c-btn" href="index.html">
                      <p><img src="images/tamers/Guilmon.png" alt="アイコン"></p>
-                     <span class="p-ico" data-ico="NEW">NEW</span>
                      <p>Guilmon has already found your old digimon tamer!</p>
                   </a>
                </li>
                <li>
                   <a class="c-btn" href="index.html">
                      <p><img src="images/tamers/Veemon.png" alt="アイコン"></p>
-                     <span class="p-ico" data-ico="NEW">NEW</span>
                      <p>Veemon has already found your old digimon tamer!</p>
                   </a>
                </li>
                <li>
                   <a class="c-btn" href="index.html">
                      <p><img src="images/tamers/Agumon.png" alt="アイコン"></p>
-                     <span class="p-ico" data-ico="NEW">NEW</span>
                      <p>Agumon has already found your old digimon tamer!</p>
                   </a>
                </li>
                <li>
                   <a class="c-btn" href="index.html">
                      <p><img src="images/tamers/Wormmon.png" alt="アイコン"></p>
-                     <span class="p-ico" data-ico="NEW">NEW</span>
                      <p>Wormmon has already found your old digimon tamer!</p>
                   </a>
                </li>
                <li>
                   <a class="c-btn" href="index.html">
                      <p><img src="images/tamers/Hawkmon.png" alt="アイコン"></p>
-                     <span class="p-ico" data-ico="NEW">NEW</span>
                      <p>Hawkmon has already found your old digimon tamer!</p>
                   </a>
                </li>
                <li>
                   <a class="c-btn" href="index.html">
                      <p><img src="images/tamers/Patamon.png" alt="アイコン"></p>
-                     <span class="p-ico" data-ico="NEW">NEW</span>
                      <p>Patamon has already found your old digimon tamer!</p>
                   </a>
                </li>
                <li>
                   <a class="c-btn" href="index.html">
                      <p><img src="images/tamers/Gatomon.png" alt="アイコン"></p>
-                     <span class="p-ico" data-ico="NEW">NEW</span>
                      <p>Gatomon has already found your old digimon tamer!</p>
                   </a>
                </li>
                <li>
                   <a class="c-btn" href="index.html">
                      <p><img src="images/tamers/Armadillomon.png" alt="アイコン"></p>
-                     <span class="p-ico" data-ico="NEW">NEW</span>
                      <p>Armadillomon has already found your old digimon tamer!</p>
                   </a>
                </li>
                <li>
                   <a class="c-btn" href="index.html">
                      <p><img src="images/tamers/Gabumon.png" alt="アイコン"></p>
-                     <span class="p-ico" data-ico="NEW">NEW</span>
                      <p>Gabumon has already found your old digimon tamer!</p>
                   </a>
                </li>
                <li>
                   <a class="c-btn" href="index.html">
-                     <p><img src="images/tamers/Renamon.png" alt="アイコン"></p>
-                     <span class="p-ico" data-ico="NEW">NEW</span>
-                     <p>Renamon has already found your old digimon tamer but the tamer needs a new digivice!</p>
-                  </a>
-               </li>
-               <li>
-                  <a class="c-btn" href="index.html">
                      <p><img src="images/tamers/Guardromon.png" alt="アイコン"></p>
-                     <span class="p-ico" data-ico="NEW">NEW</span>
                      <p>Guardromon has already found your old digimon tamer!</p>
                   </a>
                </li>
                <li>
                   <a class="c-btn" href="index.html">
                      <p><img src="images/tamers/Leomon.png" alt="アイコン"></p>
-                     <span class="p-ico" data-ico="NEW">NEW</span>
                      <p>Leomon has already found your old digimon tamer!</p>
                   </a>
                </li>
                <li>
                   <a class="c-btn" href="index.html">
                      <p><img src="images/tamers/Marine Angemon.png" alt="アイコン"></p>
-                     <span class="p-ico" data-ico="NEW">NEW</span>
                      <p>Marine Angemon has already found your old digimon tamer!</p>
                   </a>
                </li>
                <li>
                   <a class="c-btn" href="index.html">
                      <p><img src="images/tamers/Cyberdramon.png" alt="アイコン"></p>
-                     <span class="p-ico" data-ico="NEW">NEW</span>
                      <p>Cyberdramon has already found your old digimon tamer!</p>
                   </a>
                </li>
                <li>
                   <a class="c-btn" href="index.html">
                      <p><img src="images/tamers/Impmon.png" alt="アイコン"></p>
-                     <span class="p-ico" data-ico="NEW">NEW</span>
                      <p>Impmon has already found your old digimon tamer!</p>
                   </a>
                </li>
                <li>
                   <a class="c-btn" href="index.html">
                      <p><img src="images/tamers/Salamon.png" alt="アイコン"></p>
-                     <span class="p-ico" data-ico="NEW">NEW</span>
                      <p>Salamon has already found your old digimon tamer!</p>
                   </a>
                </li>
                <li>
                <a class="c-btn" href="index.html">
                   <p><img src="images/tamers/Tentomon.png" alt="アイコン"></p>
-                  <span class="p-ico" data-ico="NEW">NEW</span>
                   <p>Tentomon has already found your old digimon tamer!</p>
                </a>
                </li>
                <li>
                <a class="c-btn" href="index.html">
                   <p><img src="images/tamers/Snow Agumon.png" alt="アイコン"></p>
-                  <span class="p-ico" data-ico="NEW">NEW</span>
                   <p>Snow Agumon has already found your old digimon tamer!</p>
                </a>
                </li>
                <li>
                <a class="c-btn" href="index.html">
                   <p><img src="images/tamers/Palmon.png" alt="アイコン"></p>
-                  <span class="p-ico" data-ico="NEW">NEW</span>
                   <p>Palmon has already found your old digimon tamer!</p>
                </a>
                </li>
                <li>
                <a class="c-btn" href="index.html">
-                  <p><img src="images/tamers/Terriermon.png" alt="アイコン"></p>
-                  <span class="p-ico" data-ico="NEW">NEW</span>
-                  <p>Terriermon is awaiting for a digivice acquisition!</p>
-               </a>
-               </li>
-               <li>
-               <a class="c-btn" href="index.html">
                   <p><img src="images/tamers/Starmon.png" alt="アイコン"></p>
-                  <span class="p-ico" data-ico="NEW">NEW</span>
                   <p>Starmon has already found your old digimon tamer!</p>
                </a>
                </li>
                <li>
                <a class="c-btn" href="index.html">
                   <p><img src="images/tamers/Biyomon.png" alt="アイコン"></p>
-                  <span class="p-ico" data-ico="NEW">NEW</span>
                   <p>Biyomon has already found your old digimon tamer!</p>
                </a>
                </li>
                <li>
                <a class="c-btn" href="index.html">
                   <p><img src="images/tamers/Black Agumon.png" alt="アイコン"></p>
-                  <span class="p-ico" data-ico="NEW">NEW</span>
                   <p>Black Agumon has already found your old digimon tamer!</p>
                </a>
-               </li>
-               <li>
-                  <a class="c-btn" href="index.html">
-                     <p><img src="images/tamers/DigiEggs.png" alt="アイコン"></p>
-                     <span class="p-ico" data-ico="NEW">NEW</span>
-                     <p>12 tamers are about to hatch your eggs.</p>
-                  </a>
                </li>
                <!-- Digivice Checking -->
                <article class="l-section">
