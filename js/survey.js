@@ -1,4 +1,3 @@
-// Digivice Check
 function digiviceCheck() {
     let digiviceId = document.getElementById("dId").value;
     // Available Digivice IDs Collection
