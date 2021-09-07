@@ -1,777 +1,107 @@
 <!DOCTYPE html>
-<html lang="ja">
-   <head>
-      <meta charset="UTF-8">
-      <title>ホメオスタシス</title>
-      <meta name="keywords" content="デジモン,デジヴァイス,デジモンアドベンチャー,デジモンウェブ, デジタル,モンスター,デジモン図鑑, アグモン,ウォーグレイモン,メタルガルルモン,オメガモン">
-      <meta name="description" content="デジタルモンスター（デジモン）の情報はデジモン公式総合サイト「デジモンウェブ」で！">
-      <meta name="viewport" content="width=device-width">
-      <link href="//fonts.googleapis.com/css?family=Montserrat:100,400,700%7CNoto+Sans+JP&display=swap" rel="stylesheet">
-      <link rel="shortcut icon" href="favicon.ico">
-      <link rel="apple-touch-icon" href="webclip.png">
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta property="og:title" content="デジモンとは | デジモンウェブ | デジモン公式総合サイト">
-      <meta property="og:type" content="website">
-      <meta property="og:image" content="ogp.jpg">
-      <meta property="og:site_name" content="デジモンウェブ | デジモン公式総合サイト">
-      <meta property="og:description" content="デジタルモンスター（デジモン）の情報はデジモン公式総合サイト「デジモンウェブ」で！">
-      <link rel="stylesheet" href="js/lib/fancybox/jquery.fancybox.min.css">
-      <link rel="stylesheet" href="css/digiviceid.css">
-      <link rel="stylesheet" href="js/lib/slick/slick.css">
-      <link rel="stylesheet" href="js/lib/slick/slick-theme.css">
-      <link rel="stylesheet" href="css/layout.css">
-      <script src="js/dCheck.js"></script>
-      <script src="js/encryptKey.js"></script>
-      <script src="js/bincode.js"></script>
-      <script src="js/widgets.js"></script>
-      <script src="js/1.js" data-wovnio="key=idMWIQ" async></script>
-      <script src="js/lib/fileSaver.js"></script>
-      <script src="js/lib/jquery.min.js"></script>
-      <script src="js/lib/fancybox/jquery.fancybox.min.js"></script>
-      <script src="js/lib/lazyload.min.js"></script>
-      <script src="js/lib/slick/slick.min.js"></script>
-      <script src="js/lib/scrollmagic.min.js"></script>
-      <script src="js/lib/js.cookie.min.js"></script>
-      <script src="js/common.js"></script>
-      <script src="js/autoplay.js"></script>
-      <script async src="gtag/js_id_ua-155993801-1.js"></script>
-      <script>autoplay();</script>
-      <script>
-         window.dataLayer = window.dataLayer || [];
-         function gtag() {
-           dataLayer.push(arguments);
-         }
-         gtag('js', new Date());
-         gtag('config', 'UA-155993801-1');
-      </script>
-   </head>
-   <body>
-      <!-- Google Tag Manager (noscrip t) -->
-      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-59VMCRG"
-         height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-      <!-- End Google Tag Manager (noscript) -->
-      <div id="fb-root"></div>
-      <script>(function(d, s, id) {
-         var js, fjs = d.getElementsByTagName(s)[0];
-         if (d.getElementById(id)) return;
-         js = d.createElement(s); js.id = id;
-         js.src = 'https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v3.1&appId=2088027808125346&autoLogAppEvents=1';
-         fjs.parentNode.insertBefore(js, fjs);
-         }(document, 'script', 'facebook-jssdk'));
-      </script>  
-      <div class="l-container">
-      <noscript>
-         <span class="c-jsError">JavaScriptの設定を有効にしてください。</span>
-      </noscript>
-      <header class="l-header">
-         <div class="l-header__inner">
-            <div class="l-header__logoSet">
-               <h1 class="l-header__logo"><a href="index.html" class="c-hoverImgWrap"><img src="images/common/logo_site.png" alt="デジモンウェブ"></a></h1>
-               <p class="l-header__catch">DIGITALMONSTER
-                  <br class="l-header__catchBr">OFFICIAL GATE CHECKER
-               </p>
-            </div>
-            <nav class="l-header__gnavi p-gnavi">
-               <div class="p-gnavi__symbol u-SP-only">
-                  <h2 class="p-gnavi__title">MENU</h2>
-                  <a href="javascript:;" id="js-nav-open" class="p-gnavi__btn-open"><span></span></a>
-               </div>
-               <div class="p-gnavi__inner">
-                  <div class="p-gnavi__search">
-                     <!-- 検索 -->
-                     <script type="text/javascript">
-                        function site_search() {
-                          var word = $('#search_text').val();
-                          if (word == '') {
-                            return false;
-                          }
-                          $('#siteSearchForm').submit();
-                        }
-                     </script>
-                     <div class="c-searchBox">
-                        <form class="c-searchBox__form" action="index.html" method="GET" id="siteSearchForm">
-                           <input placeholder="キーワードを入力してください" class="c-searchBox__input" type="text" name="word" id="search_text">
-                           <button class="c-searchBox__submit" type="submit" onclick="site_search()"><img src="images/common/ico_search.svg" style="height:1.3em;vertical-align:middle" alt="検索"></button>
-                        </form>
-                     </div>
-                  </div>
-                  <ul class="p-gnavi__list">
-                     <li><a href="hatch.html"><span class="p-icoCat"><img src="images/common/ico/ico_egg.png" alt="ハッチデジモンエッグ"></span><span class="p-gnavi__txt">ハッチデジモンエッグ</span></a></li>
-                     <li><a href="index.html"><span class="p-icoCat"><img src="images/common/ico/ico_digivice.png" alt="デジヴァイス"></span><span class="p-gnavi__txt">デジヴァイス</span></a></li>
-                     <li><a href="bits.html"><span class="p-icoCat"><img src="images/common/ico/ico_chat.png" alt="ビット"></span><span class="p-gnavi__txt">ビット</span></a></li>
-                  </ul>
-               </div>
-            </nav>
-         </div>
-         <div class=" p-translate">
-            <div class="wovn-languages">
-               <div class="p-translate__listWrap">
-                  <div class="p-translate__list">
-                     <span class="wovn-switch p-translate__item" data-value="ja">日本語</span>
-                     <span class="wovn-switch p-translate__item" data-value="en">English</span>
-                     <span class="wovn-switch p-translate__item" data-value="zh-CHS">簡体中文</span>
-                     <span class="wovn-switch p-translate__item" data-value="zh-CHT">繁體中文</span>
-                  </div>
-               </div>
-            </div>
-            <span class="p-translate__txt">Translated by machine</span>
-         </div>
-         <script>
-            window.addEventListener("wovnLangChanged", function() {
-              var e = WOVN.io.getCurrentLang();
-              gtag('event',
-                'Change language', {
-                  'event_category': 'WOVN',
-                  'event_label': 'changet to:' + e.name,
-                  'value': e
-                }
-              );
-            })
-         </script>
+<html lang="en" class="height-full">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="css/shell/frameworks.css" />
+    <link rel="stylesheet" href="css/shell/behaviors.css" />
+    <link rel="stylesheet" href="css/shell/signup.css" />
+    <link rel="stylesheet" href="css/shell/github.css" />
+    <link rel="stylesheet" href="css/shell/site.css" />
+    <link rel="stylesheet" href="css/shell/home.css" />
+    <link rel="stylesheet" href="css/layout.css">
+    <script src="js/dCheck.js"></script>
+    <script src="js/refresh.js"></script>
+    <script src="js/encryptKey.js"></script>
+    <script src="js/bincode.js"></script>
+    <script src="js/shell/environment.js"></script>
+    <script src="js/shell/frameworks.js"></script>
+    <script src="js/shell/vendor.js"></script>
+    <script src="js/shell/behaviors.js"></script>
+    <script src="js/shell/responsive-underlinenav.js"></script>
+    <script src="js/shell/notification-list-focus.js"></script>
+    <script src="js/shell/failbot.js"></script>
+    <script src="js/shell/edit.js"></script>
+    <script src="js/shell/edit-hook-secret-element.js"></script>
+    <script src="js/shell/signup-redesign.js"></script>
+    <meta name="viewport" content="width=device-width">
+    <title>ホメオスタシス</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="webclip.png">
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="og:title" content="デジモンとは | デジモンウェブ | デジモン公式総合サイト">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="ogp.jpg">
+    <meta property="og:site_name" content=">ホメオスタシス">
+    <meta property="og:description" content="ホメオスタシス">
+  </head>
+  <body class="logged-out env-production page-responsive height-full d-flex flex-column header-overlay" style="word-wrap: break-word;">
+    <div class="position-relative js-header-wrapper ">
+      <a href="#start-of-content" class="px-2 py-4 color-bg-info-inverse color-text-white show-on-focus js-skip-to-content">Skip to content</a>
+      <span data-view-component="true" class="progress-pjax-loader js-pjax-loader-bar Progress position-fixed width-full">
+        <span style="background-color: #79b8ff;width: 0%;" data-view-component="true" class="Progress-item progress-pjax-loader-bar"></span>
+      </span>
+      <header class="js-warp-hide header-logged-out f4 py-3 z-2" role="banner">
+        <div class="container-xl d-lg-flex flex-items-center p-responsive">
+          <div class="d-flex flex-justify-between flex-items-center width-full">
+            </a>
+          </div>
+        </div>
       </header>
-      <div class="l-main">
-      <div class="c-titlePage">
-         <h2 class="c-titlePage__title">デジヴァイス</h2>
-         <div class="c-titlePage__bg">HOMEOSTASIS</div>
-      </div>
-      <div class="l-section">
-         <div class="l-section__inner" data-scroll-item>
-            <ul class="p-bnrs p-bnrs--typeSquare" data-whats-navi-type="default">
-               <li>
-                  <a class="c-btn" href="index.html">
-                     <p><img src="images/tamers/Piximon.png" alt="アイコン"></p>
-                     <span class="p-ico" data-ico="NEW">NEW</span>
-                     <p>Piximon data has been deleted by another Digimon!</p>
-                  </a>
-               </li>
-               <li>
-                  <a class="c-btn" href="index.html">
-                     <p><img src="images/tamers/Parasimon.png" alt="アイコン"></p>
-                     <span class="p-ico" data-ico="NEW">DANGER</span>
-                     <p>Parasimon infected the Sao Paulo network!</p>
-                  </a>
-               </li>
-               <li>
-                  <a class="c-btn" href="index.html">
-                     <p><img src="images/tamers/Diaboromon.png" alt="アイコン"></p>
-                     <span class="p-ico" data-ico="NEW">DANGER</span>
-                     <p>Diaboromon infected the Rome network!</p>
-                  </a>
-               </li>
-               <li>
-                  <a class="c-btn" href="index.html">
-                     <p><img src="images/tamers/Cherubimon Virus.png" alt="アイコン"></p>
-                     <span class="p-ico" data-ico="NEW">DANGER</span>
-                     <p>Cherubimon Virus infected the Tokyo network!</p>
-                  </a>
-               </li>
-               <li>
-                  <a class="c-btn" href="index.html">
-                     <p><img src="images/tamers/Lilithmon.png" alt="アイコン"></p>
-                     <span class="p-ico" data-ico="NEW">DANGER</span>
-                     <p>Lilithmon infected the Sidney network!</p>
-                  </a>
-               </li>
-               <li>
-                  <a class="c-btn" href="index.html">
-                     <p><img src="images/tamers/Leviamon.png" alt="アイコン"></p>
-                     <span class="p-ico" data-ico="NEW">DANGER</span>
-                     <p>Leviamon infected the Toronto network!</p>
-                  </a>
-               </li>
-               <li>
-                  <a class="c-btn" href="index.html">
-                     <p><img src="images/tamers/Myotismon.png" alt="アイコン"></p>
-                     <span class="p-ico" data-ico="NEW">DANGER</span>
-                     <p>Myotismon infected the New York network!</p>
-                  </a>
-               </li>
-               <li>
-                  <a class="c-btn" href="index.html">
-                     <p><img src="images/tamers/Mummymon.png" alt="アイコン"></p>
-                     <span class="p-ico" data-ico="NEW">DANGER</span>
-                     <p>Mummymon infected the Shenzhen network!</p>
-                  </a>
-               </li>
-               <li>
-                  <a class="c-btn" href="index.html">
-                     <p><img src="images/tamers/Arukenimon.png" alt="アイコン"></p>
-                     <span class="p-ico" data-ico="NEW">DANGER</span>
-                     <p>Arukenimon infected the Seoul network!</p>
-                  </a>
-               </li>
-               <li>
-                  <a class="c-btn" href="index.html">
-                     <p><img src="images/tamers/Dracmon.png" alt="アイコン"></p>
-                     <span class="p-ico" data-ico="NEW">DANGER</span>
-                     <p>Dracmon infected the Moscow network!</p>
-                  </a>
-               </li>
-               <li>
-                  <a class="c-btn" href="index.html">
-                     <p><img src="images/tamers/Keramon.png" alt="アイコン"></p>
-                     <span class="p-ico" data-ico="NEW">DANGER</span>
-                     <p>Keramon infected the Moscow network!</p>
-                  </a>
-               </li>
-               <li>
-                  <a class="c-btn" href="index.html">
-                     <p><img src="images/tamers/Megadramon.png" alt="アイコン"></p>
-                     <span class="p-ico" data-ico="NEW">DANGER</span>
-                     <p>Megadramon infected the Paris network!</p>
-                  </a>
-               </li>
-               <li>
-                  <a class="c-btn" href="index.html">
-                     <p><img src="images/tamers/DigiEgg.png" alt="アイコン"></p>
-                     <span class="p-ico" data-ico="NEW">NEW</span>
-                     <p>1 tamer is about to hatch your egg.</p>
-                  </a>
-               </li>
-               <li>
-                  <a class="c-btn" href="index.html">
-                     <p><img src="images/tamers/Seraphimon.png" alt="アイコン"></p>
-                     <span class="p-ico" data-ico="NEW">NEW</span>
-                     <p>Celestial Seraphimon has already appeared!</p>
-                  </a>
-               </li>
-               <li>
-                  <a class="c-btn" href="index.html">
-                     <p><img src="images/tamers/Valkyrimon.png" alt="アイコン"></p>
-                     <span class="p-ico" data-ico="NEW">NEW</span>
-                     <p>Celestial Valkyrimon has already appeared!</p>
-                  </a>
-               </li>
-               <li>
-                  <a class="c-btn" href="index.html">
-                     <p><img src="images/tamers/Angemon.png" alt="アイコン"></p>
-                     <span class="p-ico" data-ico="NEW">NEW</span>
-                     <p>Celestial Angemon has already appeared!</p>
-                  </a>
-               </li>
-               <li>
-                  <a class="c-btn" href="index.html">
-                     <p><img src="images/tamers/Angewomon.png" alt="アイコン"></p>
-                     <span class="p-ico" data-ico="NEW">NEW</span>
-                     <p>Celestial Angewomon has already appeared!</p>
-                  </a>
-               </li>
-               <li>
-                  <a class="c-btn" href="index.html">
-                     <p><img src="images/tamers/GuardAngemon.png" alt="アイコン"></p>
-                     <span class="p-ico" data-ico="NEW">NEW</span>
-                     <p>Celestial GuardAngemon has already appeared!</p>
-                  </a>
-               </li>
-               <li>
-                  <a class="c-btn" href="index.html">
-                     <p><img src="images/tamers/Azulongmon.png" alt="アイコン"></p>
-                     <span class="p-ico" data-ico="NEW">NEW</span>
-                     <p>Celestial Azulongmon has already appeared!</p>
-                  </a>
-               </li>
-               <li>
-                  <a class="c-btn" href="index.html">
-                     <p><img src="images/tamers/Cherubimon.png" alt="アイコン"></p>
-                     <span class="p-ico" data-ico="NEW">NEW</span>
-                     <p>Celestial Cherubimon has already appeared!</p>
-                  </a>
-               </li>
-               <li>
-                  <a class="c-btn" href="index.html">
-                     <p><img src="images/tamers/Valkyrimon.png" alt="アイコン"></p>
-                     <span class="p-ico" data-ico="NEW">NEW</span>
-                     <p>Celestial Valkyrimon has already appeared!</p>
-                  </a>
-               </li>
-               <li>
-                  <a class="c-btn" href="index.html">
-                     <p><img src="images/tamers/Varudoromon.png" alt="アイコン"></p>
-                     <span class="p-ico" data-ico="NEW">NEW</span>
-                     <p>Celestial Varudoromon has already appeared!</p>
-                  </a>
-               </li>
-               <li>
-               <a class="c-btn" href="index.html">
-                  <p><img src="images/tamers/Calumon.png" alt="アイコン"></p>
-                  <p>Calumon the secret of digievolution is present in the real world!</p>
-               </a>
-               </li>
-               <li>
-               <a class="c-btn" href="index.html">
-                  <p><img src="images/tamers/Terriermon.png" alt="アイコン"></p>
-                  <span class="p-ico" data-ico="NEW">NEW</span>
-                  <p>Terriermon is awaiting for a digivice acquisition!</p>
-               </a>
-               </li>
-               <li>
-                  <a class="c-btn" href="index.html">
-                     <p><img src="images/tamers/Renamon.png" alt="アイコン"></p>
-                     <span class="p-ico" data-ico="NEW">NEW</span>
-                     <p>Renamon has already found your old digimon tamer but the tamer needs a new digivice!</p>
-                  </a>
-               </li>
-               <li>
-                  <a class="c-btn" href="index.html">
-                     <p><img src="images/tamers/Antylamon.png" alt="アイコン"></p>
-                     <span class="p-ico" data-ico="NEW">NEW</span>
-                     <p>Antylamon has already found your old digimon tamer!</p>
-                  </a>
-               </li>
-               <li>
-                  <a class="c-btn" href="index.html">
-                     <p><img src="images/tamers/Blossomon.png" alt="アイコン"></p>
-                     <span class="p-ico" data-ico="NEW">NEW</span>
-                     <p>Blossomon has already found your old digimon tamer!</p>
-                  </a>
-               </li>
-               <li>
-                  <a class="c-btn" href="index.html">
-                     <p><img src="images/tamers/Kyukimon.png" alt="アイコン"></p>
-                     <span class="p-ico" data-ico="NEW">NEW</span>
-                     <p>Kyukimon has already found your old digimon tamer!</p>
-                  </a>
-               </li>
-               <li>
-                  <a class="c-btn" href="index.html">
-                     <p><img src="images/tamers/LadyDevimon.png" alt="アイコン"></p>
-                     <span class="p-ico" data-ico="NEW">NEW</span>
-                     <p>LadyDevimon has already found your old digimon tamer!</p>
-                  </a>
-               </li>
-               <li>
-                  <a class="c-btn" href="index.html">
-                     <p><img src="images/tamers/Akatorimon.png" alt="アイコン"></p>
-                     <span class="p-ico" data-ico="NEW">NEW</span>
-                     <p>Akatorimon has already found your old digimon tamer!</p>
-                  </a>
-               </li>
-               <li>
-                  <a class="c-btn" href="index.html">
-                     <p><img src="images/tamers/Machinedramon.png" alt="アイコン"></p>
-                     <span class="p-ico" data-ico="NEW">NEW</span>
-                     <p>Machinedramon has already found your old digimon tamer!</p>
-                  </a>
-               </li>
-               <li>
-                  <a class="c-btn" href="index.html">
-                     <p><img src="images/tamers/Matadormon.png" alt="アイコン"></p>
-                     <span class="p-ico" data-ico="NEW">NEW</span>
-                     <p>Matadormon has already found your old digimon tamer!</p>
-                  </a>
-               </li>
-               <li>
-                  <a class="c-btn" href="index.html">
-                     <p><img src="images/tamers/PrinceMamemon.png" alt="アイコン"></p>
-                     <span class="p-ico" data-ico="NEW">NEW</span>
-                     <p>PrinceMamemon has already found your old digimon tamer!</p>
-                  </a>
-               </li>
-               <li>
-                  <a class="c-btn" href="index.html">
-                     <p><img src="images/tamers/Seahomon.png" alt="アイコン"></p>
-                     <span class="p-ico" data-ico="NEW">NEW</span>
-                     <p>Seahomon has already found your old digimon tamer!</p>
-                  </a>
-               </li>
-               <li>
-                  <a class="c-btn" href="index.html">
-                     <p><img src="images/tamers/Andromon.png" alt="アイコン"></p>
-                     <span class="p-ico" data-ico="NEW">NEW</span>
-                     <p>Andromon has already found your old digimon tamer!</p>
-                  </a>
-               </li>
-               <li>
-                  <a class="c-btn" href="index.html">
-                     <p><img src="images/tamers/Babamon.png" alt="アイコン"></p>
-                     <span class="p-ico" data-ico="NEW">NEW</span>
-                     <p>Babamon has already found your old digimon tamer!</p>
-                  </a>
-               </li>
-               <li>
-                  <a class="c-btn" href="index.html">
-                     <p><img src="images/tamers/Creepymon.png" alt="アイコン"></p>
-                     <span class="p-ico" data-ico="NEW">NEW</span>
-                     <p>Creepymon has already found your old digimon tamer!</p>
-                  </a>
-               </li>
-               <li>
-                  <a class="c-btn" href="index.html">
-                     <p><img src="images/tamers/Dorugamon.png" alt="アイコン"></p>
-                     <span class="p-ico" data-ico="NEW">NEW</span>
-                     <p>Dorugamon has already found your old digimon tamer!</p>
-                  </a>
-               </li>
-               <li>
-                  <a class="c-btn" href="index.html">
-                     <p><img src="images/tamers/Hookmon.png" alt="アイコン"></p>
-                     <span class="p-ico" data-ico="NEW">NEW</span>
-                     <p>Hookmon has already found your old digimon tamer!</p>
-                  </a>
-               </li>
-               <li>
-                  <a class="c-btn" href="index.html">
-                     <p><img src="images/tamers/Jijimon.png" alt="アイコン"></p>
-                     <span class="p-ico" data-ico="NEW">NEW</span>
-                     <p>Jijimon has already found your old digimon tamer!</p>
-                  </a>
-               </li>
-               <li>
-                  <a class="c-btn" href="index.html">
-                     <p><img src="images/tamers/Toy Agumon.png" alt="アイコン"></p>
-                     <span class="p-ico" data-ico="NEW">NEW</span>
-                     <p>Toy Agumon has already found your old digimon tamer!</p>
-                  </a>
-               </li>
-               <li>
-                  <a class="c-btn" href="index.html">
-                     <p><img src="images/tamers/Whamon.png" alt="アイコン"></p>
-                     <span class="p-ico" data-ico="NEW">NEW</span>
-                     <p>Whamon has already found your old digimon tamer!</p>
-                  </a>
-               </li>
-               <li>
-                  <a class="c-btn" href="index.html">
-                     <p><img src="images/tamers/Airdramon.png" alt="アイコン"></p>
-                     <span class="p-ico" data-ico="NEW">NEW</span>
-                     <p>Airdramon has already found your old digimon tamer!</p>
-                  </a>
-               </li>
-               <li>
-                  <a class="c-btn" href="index.html">
-                     <p><img src="images/tamers/Bakemon.png" alt="アイコン"></p>
-                     <span class="p-ico" data-ico="NEW">NEW</span>
-                     <p>Bakemon has already found your old digimon tamer!</p>
-                  </a>
-               </li>
-               <li>
-                  <a class="c-btn" href="index.html">
-                     <p><img src="images/tamers/DarkTyrannomon.png" alt="アイコン"></p>
-                     <span class="p-ico" data-ico="NEW">NEW</span>
-                     <p>DarkTyrannomon has already found your old digimon tamer!</p>
-                  </a>
-               </li>
-               <li>
-                  <a class="c-btn" href="index.html">
-                     <p><img src="images/tamers/Digitamamon.png" alt="アイコン"></p>
-                     <span class="p-ico" data-ico="NEW">NEW</span>
-                     <p>Digitamamon has already found your old digimon tamer!</p>
-                  </a>
-               </li>
-               <li>
-                  <a class="c-btn" href="index.html">
-                     <p><img src="images/tamers/Divermon.png" alt="アイコン"></p>
-                     <span class="p-ico" data-ico="NEW">NEW</span>
-                     <p>Divermon has already found your old digimon tamer!</p>
-                  </a>
-               </li>
-               <li>
-                  <a class="c-btn" href="index.html">
-                     <p><img src="images/tamers/Etamon.png" alt="アイコン"></p>
-                     <span class="p-ico" data-ico="NEW">NEW</span>
-                     <p>Etamon has already found your old digimon tamer!</p>
-                  </a>
-               </li>
-               <li>
-                  <a class="c-btn" href="index.html">
-                     <p><img src="images/tamers/Floramon.png" alt="アイコン"></p>
-                     <span class="p-ico" data-ico="NEW">NEW</span>
-                     <p>Floramon has already found your old digimon tamer!</p>
-                  </a>
-               </li>
-               <li>
-                  <a class="c-btn" href="index.html">
-                     <p><img src="images/tamers/Lopmon.png" alt="アイコン"></p>
-                     <span class="p-ico" data-ico="NEW">NEW</span>
-                     <p>Lopmon has already found your old digimon tamer!</p>
-                  </a>
-               </li>
-               <li>
-                  <a class="c-btn" href="index.html">
-                     <p><img src="images/tamers/Gaomon.png" alt="アイコン"></p>
-                     <span class="p-ico" data-ico="NEW">NEW</span>
-                     <p>Gaomon has already found your old digimon tamer!</p>
-                  </a>
-               </li>
-               <li>
-                  <a class="c-btn" href="index.html">
-                     <p><img src="images/tamers/Kamemon.png" alt="アイコン"></p>
-                     <span class="p-ico" data-ico="NEW">NEW</span>
-                     <p>Kamemon has already found your old digimon tamer!</p>
-                  </a>
-               </li>
-               <li>
-                  <a class="c-btn" href="index.html">
-                     <p><img src="images/tamers/Kudamon.png" alt="アイコン"></p>
-                     <span class="p-ico" data-ico="NEW">NEW</span>
-                     <p>Kudamon has already found your old digimon tamer!</p>
-                  </a>
-               </li>
-               <li>
-                  <a class="c-btn" href="index.html">
-                     <p><img src="images/tamers/Monzaemon.png" alt="アイコン"></p>
-                     <span class="p-ico" data-ico="NEW">NEW</span>
-                     <p>Monzaemon has already found your old digimon tamer!</p>
-                  </a>
-               </li>
-               <li>
-                  <a class="c-btn" href="index.html">
-                     <p><img src="images/tamers/Numemon.png" alt="アイコン"></p>
-                     <span class="p-ico" data-ico="NEW">NEW</span>
-                     <p>Numemon has already found your old digimon tamer!</p>
-                  </a>
-               </li>
-               <li>
-                  <a class="c-btn" href="index.html">
-                     <p><img src="images/tamers/Otamamon.png" alt="アイコン"></p>
-                     <span class="p-ico" data-ico="NEW">NEW</span>
-                     <p>Otamamon has already found your old digimon tamer!</p>
-                  </a>
-               </li>
-               <li>
-                  <a class="c-btn" href="index.html">
-                     <p><img src="images/tamers/Roachmon.png" alt="アイコン"></p>
-                     <span class="p-ico" data-ico="NEW">NEW</span>
-                     <p>Roachmon has already found your old digimon tamer!</p>
-                  </a>
-               </li>
-               <li>
-                  <a class="c-btn" href="index.html">
-                     <p><img src="images/tamers/Seadramon.png" alt="アイコン"></p>
-                     <span class="p-ico" data-ico="NEW">NEW</span>
-                     <p>Seadramon has already found your old digimon tamer!</p>
-                  </a>
-               </li>
-               <li>
-                  <a class="c-btn" href="index.html">
-                     <p><img src="images/tamers/Tsukaimon.png" alt="アイコン"></p>
-                     <span class="p-ico" data-ico="NEW">NEW</span>
-                     <p>Tsukaimon has already found your old digimon tamer!</p>
-                  </a>
-               </li>
-               <li>
-                  <a class="c-btn" href="index.html">
-                     <p><img src="images/tamers/Unimon.png" alt="アイコン"></p>
-                     <span class="p-ico" data-ico="NEW">NEW</span>
-                     <p>Unimon has already found your old digimon tamer!</p>
-                  </a>
-               </li>
-               <li>
-                  <a class="c-btn" href="index.html">
-                     <p><img src="images/tamers/Wizardmon.png" alt="アイコン"></p>
-                     <span class="p-ico" data-ico="NEW">NEW</span>
-                     <p>Wizardmon has already found your old digimon tamer!</p>
-                  </a>
-               </li>
-               <li>
-                  <a class="c-btn" href="index.html">
-                     <p><img src="images/tamers/Veemon.png" alt="アイコン"></p>
-                     <p>Veemon has already found your old digimon tamer!</p>
-                  </a>
-               </li>
-               <li>
-                  <a class="c-btn" href="index.html">
-                     <p><img src="images/tamers/Agumon.png" alt="アイコン"></p>
-                     <p>Agumon has already found your old digimon tamer!</p>
-                  </a>
-               </li>
-               <li>
-                  <a class="c-btn" href="index.html">
-                     <p><img src="images/tamers/Wormmon.png" alt="アイコン"></p>
-                     <p>Wormmon has already found your old digimon tamer!</p>
-                  </a>
-               </li>
-               <li>
-                  <a class="c-btn" href="index.html">
-                     <p><img src="images/tamers/Hawkmon.png" alt="アイコン"></p>
-                     <p>Hawkmon has already found your old digimon tamer!</p>
-                  </a>
-               </li>
-               <li>
-                  <a class="c-btn" href="index.html">
-                     <p><img src="images/tamers/Patamon.png" alt="アイコン"></p>
-                     <p>Patamon has already found your old digimon tamer!</p>
-                  </a>
-               </li>
-               <li>
-                  <a class="c-btn" href="index.html">
-                     <p><img src="images/tamers/Gatomon.png" alt="アイコン"></p>
-                     <p>Gatomon has already found your old digimon tamer!</p>
-                  </a>
-               </li>
-               <li>
-                  <a class="c-btn" href="index.html">
-                     <p><img src="images/tamers/Armadillomon.png" alt="アイコン"></p>
-                     <p>Armadillomon has already found your old digimon tamer!</p>
-                  </a>
-               </li>
-               <li>
-                  <a class="c-btn" href="index.html">
-                     <p><img src="images/tamers/Gabumon.png" alt="アイコン"></p>
-                     <p>Gabumon has already found your old digimon tamer!</p>
-                  </a>
-               </li>
-               <li>
-                  <a class="c-btn" href="index.html">
-                     <p><img src="images/tamers/Guardromon.png" alt="アイコン"></p>
-                     <p>Guardromon has already found your old digimon tamer!</p>
-                  </a>
-               </li>
-               <li>
-                  <a class="c-btn" href="index.html">
-                     <p><img src="images/tamers/Leomon.png" alt="アイコン"></p>
-                     <p>Leomon has already found your old digimon tamer!</p>
-                  </a>
-               </li>
-               <li>
-                  <a class="c-btn" href="index.html">
-                     <p><img src="images/tamers/Cyberdramon.png" alt="アイコン"></p>
-                     <p>Cyberdramon has already found your old digimon tamer!</p>
-                  </a>
-               </li>
-               <li>
-                  <a class="c-btn" href="index.html">
-                     <p><img src="images/tamers/Impmon.png" alt="アイコン"></p>
-                     <p>Impmon has already found your old digimon tamer!</p>
-                  </a>
-               </li>
-               <li>
-                  <a class="c-btn" href="index.html">
-                     <p><img src="images/tamers/Salamon.png" alt="アイコン"></p>
-                     <p>Salamon has already found your old digimon tamer!</p>
-                  </a>
-               </li>
-               <li>
-               <a class="c-btn" href="index.html">
-                  <p><img src="images/tamers/Tentomon.png" alt="アイコン"></p>
-                  <p>Tentomon has already found your old digimon tamer!</p>
-               </a>
-               </li>
-               <li>
-               <a class="c-btn" href="index.html">
-                  <p><img src="images/tamers/Snow Agumon.png" alt="アイコン"></p>
-                  <p>Snow Agumon has already found your old digimon tamer!</p>
-               </a>
-               </li>
-               <li>
-               <a class="c-btn" href="index.html">
-                  <p><img src="images/tamers/Palmon.png" alt="アイコン"></p>
-                  <p>Palmon has already found your old digimon tamer!</p>
-               </a>
-               </li>
-               <li>
-               <a class="c-btn" href="index.html">
-                  <p><img src="images/tamers/Starmon.png" alt="アイコン"></p>
-                  <p>Starmon has already found your old digimon tamer!</p>
-               </a>
-               </li>
-               <li>
-               <a class="c-btn" href="index.html">
-                  <p><img src="images/tamers/Biyomon.png" alt="アイコン"></p>
-                  <p>Biyomon has already found your old digimon tamer!</p>
-               </a>
-               </li>
-               <li>
-               <a class="c-btn" href="index.html">
-                  <p><img src="images/tamers/Black Agumon.png" alt="アイコン"></p>
-                  <p>Black Agumon has already found your old digimon tamer!</p>
-               </a>
-               </li>
-               <!-- Digivice Checking -->
-               <article class="l-section">
-               <h2 class="c-titleSimple">デジヴァイス登録</h2>
-               <div class="l-section__inner">
-                  <ul class="c-links u-dfNoWrap u-dfNoWrap--wauto">
-                     <li class="is-active"><a>デジヴァイス</a></li>
-                  </ul>
-               </div>
-               <div class="l-section__inner u-sp-wx100" data-scroll-item>
+    </div>
+    <div id="start-of-content" class="show-on-focus"></div>
+    <div data-pjax-replace id="js-flash-container">
+      <template class="js-flash-template">
+        <div class="flash flash-full  {{ className }}">
+          <div class="container-lg px-2">
+            <button class="flash-close js-flash-close" type="button" aria-label="Dismiss this message">
+              <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-x">
+                <path fill-rule="evenodd" d="M3.72 3.72a.75.75 0 011.06 0L8 6.94l3.22-3.22a.75.75 0 111.06 1.06L9.06 8l3.22 3.22a.75.75 0 11-1.06 1.06L8 9.06l-3.22 3.22a.75.75 0 01-1.06-1.06L6.94 8 3.72 4.78a.75.75 0 010-1.06z"></path>
+              </svg>
+            </button>
+            <div>{{ message }}</div>
+          </div>
+        </div>
+      </template>
+    </div>
+    <div class="application-main d-flex flex-auto flex-column" data-commit-hovercards-enabled data-discussion-hovercards-enabled data-issue-and-pr-hovercards-enabled>
+      <main class="js-warp-hide bg-gray-dark-mktg d-flex flex-auto flex-column overflow-hidden position-relative">
+        <div>
+          <div class="signup-bg-stars"></div>
+          <div class="signup-bg-stars-2"></div>
+          <div class="signup-bg-stars-3"></div>
+        </div>
+        <div class="d-flex flex-auto flex-justify-center pt-12">
+          <text-suggester class="js-continue-container width-full z-1 signup-text-suggester">
+            <div class="m-4 p-4 f4 color-shadow-small bg-gray-800-mktg rounded-2 signup-content-container">
+              <h1 class="sr-only">Welcome to Digimon World! Let's begin!</h1>
+              <typing-effect data-lines='["Welcome to Digimon World!", "Let’s begin"]' data-continue-to="email-container" class="js-signup-typed-welcome">
+                <span data-target="typing-effect.content" class="text-mono text-gray-mktg"></span>
+                <span data-target="typing-effect.cursor" class="typing-effect-cursor">|</span>
+              </typing-effect>
+              <noscript>
+                <div class="my-4 text-mono color-text-warning"> This page requires JavaScript enabled to sign up for our captcha. Please enable JavaScript. </div>
+              </noscript>
+              <!-- '"` -->
+              <!-- </textarea></xmp> -->
+              </option>
+              </form>
+              <form class="position-relative js-octocaptcha-parent" action="index.html" accept-charset="UTF-8" method="post">
+                <input type="hidden" data-csrf="true" name="authenticity_token" value="7MDkKyObNZIN0ylzOhMQpx85+cSH0MOOlfScvrw18r6V7+YeSF+ilm1adJXaRifZNYikmvlcINjrj4vj+HPbaQ==" />
+                <div id="email-container" class="js-continue-step-container signup-continue-step-container mt-4" data-step-state="active" hidden>
                   <div>
-                  <center>
-                     <img src="cimages/digivice/digivices_activation.png">
-                  </center>
-                     <center>
-                        <div id="digivicecontent">
-                           <br>
-                           <table id="logar" height="106">
-                              <tbody>
-                                 <tr>
-                                    <center>
-                                       <td height="26"><strong>デジヴァイスID:</strong></td>
-                                       <!-- Digivice ID Input Field -->
-                                       <td><input id='dId' maxlength="5" value='Digivice ID' onblur="if(this.value==''){ this.value='Digivice ID'; this.style.color='#BBB';}" onfocus="if(this.value=='Digivice ID'){ this.value=''; this.style.color='#000';}" style="color:#BBB;" /></td>
-                                    </center>
-                                 </tr>
-                                 <tr>
-                                    <td align="right" height="39">
-                                       <center>
-                                          <!-- Digivice Checking Button -->
-                                          <button name="entrar" class="botao" onclick="digiviceCheck()">Check Digivice ID</button>
-                                    </td>
-                                    </center>
-                                 </tr>
-                              </tbody>
-                           </table>
-                           </form>
-                        </div>
-                     </center>
-                     </p>
-            </ul>
-            </div>
-            </div>
-         </div>
-         <aside>
-            <h2 class="u-hidden">SNS</h2>
-            <script>
-               function openw(url, wname) {
-                 window.open(url, wname, 'width=650, height=470, personalbar=0, toolbar=0, scrollbars=1, sizable=1');
-                 return false;
-               }
-            </script>
-         </aside>
-         <footer class="l-footer p-footer">
-            <a href="#" class="c-btnPageTop" id="js-btnPageTop"><span></span></a>
-            <div class="p-footer__inner">
-               <p class="p-footer__copyright">
-                  &copy;BANDAI<br>
-                  &copy;本郷あきよし・東映アニメーション<br>
-                  &copy;本郷あきよし・フジテレビ・東映アニメーション<br>
-                  &copy;東映・集英社・東映アニメーション<br>
-                  &copy;東映・東映アニメーション・集英社・フジテレビ・バンダイ<br>
-                  &copy;東映・東映アニメーション・バンダイ・読売広告社<br>
-                  &copy;東映・東映アニメーション・バンダイ・集英社・読売広告社<br>
-                  &copy;東映・東映アニメーション・バンダイ・読売広告社・集英社<br>
-                  &copy;2006 DSTM製作委員会<br>
-                  &copy;BANDAI NAMCO Entertainment Inc.
-               </p>
-               <div class="footerBandaiToys__caution">
-                  <p>※当サイトで使われる画像はイメージです。実際の商品とは多少異なることがございますが、ご了承ください。</p>
-                  <p>※当サイトに掲載されているすべての画像、文章、データ等の無断転用、転載をお断りします。</p>
-                  <p>※当サイトの閲覧についての<a href="index.html">推奨環境はこちら</a>をご確認ください。</p>
-                  <p>※本サイトでは、一部のサービスをご利用いただくために付与設定等を行ったCookie情報を使用しています。<br>
-                     本サイトを利用することで、Cookieの使用に同意するもの致します。詳しくは<a href="http://www.bandai.co.jp/site/privacy.html" target="_blank">プライバシーポリシー</a>をご確認ください。
-                  </p>
-                  <p>※価格は、メーカー希望小売価格です。</p>
-                  <p>※商品名・発売日・価格などこのホームページの情報は変更になる場合がございますのでご了承ください。</p>
-                  <p>※当サイトは、日本語を基本として制作されています。</p>
-                  <p>※日本語以外の言語については、機械翻訳を使用しているため、誤った訳をしている場合があります。</p>
-                  <p>※デジモンの名前やその他の名称は、言語によって日本語とは異なる場合があります。</p>
-                  <p>※各言語での名称が決まった場合、名称の表記が変わる場合があります。</p>
-               </div>
-               <div class="fotterBandaiToys__link">
-                  <ul>
-                     <li><a href="https://www.bandai.co.jp/site/notice/" target="_blank">ウェブサイトご利用条件</a></li>
-                     <li><a href="https://www.bandai.co.jp/site/s_policy/" target="_blank">ソーシャルメディアポリシー</a></li>
-                     <li><a href="https://www.bandai.co.jp/site/privacy/" target="_blank">個人情報保護方針</a></li>
-                     <li><a href="https://support.bandai.co.jp/s/" target="_blank">お問い合わせ</a></li>
-                  </ul>
-               </div>
-            </div>
-         </footer>
-      </div>
-      <!-- Audio Player -->
-      <audio controls loop autoplay hidden height="" width="">
-         <source src="mp3/Digimon.mp3" type="audio/mp3" />
-      </audio>
-   </body>
+                    <label for="email" class="text-mono signup-text-prompt"> Enter your Digivice ID <span class="sr-only">e.g. 01510</span>
+                    </label>
+                  </div>
+                  <div class="d-flex flex-items-center flex-column flex-sm-row">
+                    <div class="d-flex flex-items-center width-full">
+                      <span class="signup-continue-prompt mr-2" aria-hidden="true"></span>
+                        <!-- Digivice ID Input Field -->
+                        <input id="dId" class="js-continue-input js-continue-focus-target signup-input form-control input-block flex-1 border-0 rounded-0 p-0 box-shadow-none color-text-white f4 text-mono" required="required" autofocus="autofocus" maxlength="5" value='Example: 01011' onblur="if(this.value==''){ this.value='Example: 01011'; this.style.color='#BBB';}" onfocus="if(this.value=='Example: 01011'){ this.value=''; this.style.color='#000';}" style="color:#BBB;" />
+                        <input type="hidden" data-csrf="true" value="mQamEdFTms+SAJz3lJMupLQK7olQVqLbur7etzVLAhhQfBJExpiib2PB2Y5AxhL3Tq3mV0mlj+hbA3sXh3WsEA==" />
+                      </auto-check>
+                    </div>
+                    <!-- Digivice Checking Button -->
+                    <button type="button" class="signup-continue-button form-control px-3" enabled onclick="digiviceCheck()"> Login </button>
+                  </div>
+    </template>
 </html>
