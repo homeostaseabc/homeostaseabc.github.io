@@ -89,18 +89,18 @@
                 <input type="hidden" data-csrf="true" name="authenticity_token" value="7MDkKyObNZIN0ylzOhMQpx85+cSH0MOOlfScvrw18r6V7+YeSF+ilm1adJXaRifZNYikmvlcINjrj4vj+HPbaQ==" />
                 <div id="email-container" class="js-continue-step-container signup-continue-step-container mt-4" data-step-state="active" hidden>
                   <div>
-                    <label for="email" class="text-mono signup-text-prompt"> Enter your Digivice ID <span class="sr-only">e.g. 01510</span>
+                    <label for="email" class="text-mono signup-text-prompt"> Enter your Vital Bracelet ID <span class="sr-only">e.g. 01510</span>
                     </label>
                   </div>
                   <div class="d-flex flex-items-center flex-column flex-sm-row">
                     <div class="d-flex flex-items-center width-full">
                       <span class="signup-continue-prompt mr-2" aria-hidden="true"></span>
-                        <!-- Digivice ID Input Field -->
-                        <input id="dId" class="js-continue-input js-continue-focus-target signup-input form-control input-block flex-1 border-0 rounded-0 p-0 box-shadow-none color-text-white f4 text-mono" required="required" autofocus="autofocus" maxlength="5" value='Example: 01011' onblur="if(this.value==''){ this.value='Example: 01011'; this.style.color='#BBB';}" onfocus="if(this.value=='Example: 01011'){ this.value=''; this.style.color='#000';}" style="color:#BBB;" />
+                        <!-- Bracelet ID Input Field -->
+                        <input id="dId" class="js-continue-input js-continue-focus-target signup-input form-control input-block flex-1 border-0 rounded-0 p-0 box-shadow-none color-text-white f4 text-mono" required="required" autofocus="autofocus" maxlength="14" value='Example: Tamer000111ABC' onblur="if(this.value==''){ this.value='Example: Tamer000111ABC'; this.style.color='#BBB';}" onfocus="if(this.value=='Example: Tamer000111ABC'){ this.value=''; this.style.color='#000';}" style="color:#BBB;" />
                         <input type="hidden" data-csrf="true" value="mQamEdFTms+SAJz3lJMupLQK7olQVqLbur7etzVLAhhQfBJExpiib2PB2Y5AxhL3Tq3mV0mlj+hbA3sXh3WsEA==" />
                       </auto-check>
                     </div>
-                    <!-- Digivice Checking Button -->
+                    <!-- Bracelet Checking Button -->
                     <button type="button" class="signup-continue-button form-control px-3" enabled onclick="digiviceCheck()"> Login </button>
                   </div>
     </template>
